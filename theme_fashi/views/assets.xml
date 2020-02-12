@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="_assets_primary_variables" inherit_id="website._assets_primary_variables" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_variables.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_mixins.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_path.scss"/>
+
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/themify-icons/_variables.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/themify-icons/_mixins.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/themify-icons/_path.scss"/>
+
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/elegant-icons/_utils.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/elegant-icons/_icons-list.scss"/>
+
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/owl-carousel/_theme.default.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/owl-carousel/_theme.green.scss"/>
+
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/slicknav/theme.scss"/>
+        </xpath>
+    </template>
+
+    <template id="assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="link[last()]" position="after">
+            <!-- <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/bootstrap.min.scss"/> -->
+
+            <!-- font awesome -->
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_core.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_larger.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_fixed-width.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_list.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_bordered-pulled.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_animated.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_rotated-flipped.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_stacked.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_icons.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/font-awesome/_screen-reader.scss"/>
+
+            <!-- themify icons -->
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/themify-icons/_core.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/themify-icons/_extras.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/themify-icons/_icons.scss"/>
+
+            <!-- elegant icons -->
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/elegant-icons/elegant-icons-sass.scss"/>
+
+            <!-- owl carousel -->
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/owl-carousel/_core.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/owl-carousel/_animate.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/owl-carousel/_autoheight.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/owl-carousel/_lazyload.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/owl-carousel/_video.scss"/>
+
+            <!-- nice select -->
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/nice-select/nice-select.scss"/>
+
+            <!-- <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/jquery-ui.min.scss"/> -->
+            <!-- slicknav -->
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/slicknav/core.scss"/>
+
+            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/style.scss"/>
+        </xpath>
+
+        <xpath expr="//script[last()]" position="after">
+            <!-- <script type="text/javascript" src="/theme_fashi/static/js/jquery-3.3.1.min.js"></script> -->
+            <!-- <script type="text/javascript" src="/theme_fashi/static/js/bootstrap.min.js"></script> -->
+            <!-- <script type="text/javascript" src="/theme_fashi/static/js/jquery-ui.min.js"></script> -->
+            <script type="text/javascript" src="/theme_fashi/static/js/jquery.countdown.min.js"></script>
+            <script type="text/javascript" src="/theme_fashi/static/js/jquery.nice-select.js"></script>
+            <script type="text/javascript" src="/theme_fashi/static/js/jquery.zoom.min.js"></script>
+            <script type="text/javascript" src="/theme_fashi/static/js/jquery.dd.min.js"></script>
+            <script type="text/javascript" src="/theme_fashi/static/js/jquery.slicknav.js"></script>
+            <script type="text/javascript" src="/theme_fashi/static/js/owl.carousel.js"></script>
+            <script type="text/javascript" src="/theme_fashi/static/js/main.js"></script>
+        </xpath>
+    </template>
+
+</odoo>
