@@ -1,21 +1,50 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+
+    <template id="preloader" inherit_id="website.layout" name="preLoader">
+        <xpath expr="//div[@id='wrapwrap']" position="before">
+            <div id="preloder">
+                <div class="loader"></div>
+            </div>
+        </xpath>
+    </template>
+
     <!-- Customize header  -->
     <template id="fashi_header" inherit_id="website.layout" name="Custom Header">
 
-        <!-- Assign an id  -->
-        <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
-            <attribute name="class" add="header-section" separator=" "/>
+        <xpath expr="//div[@id='wrapwrap']/header" position="replace">
+            <header class="header-section">
+                <div class="nav-item">
+                    <div class="container">
+                        <div class="nav-depart">
+                            <a href="/" class="navbar-brand logo">
+                                <img t-att-src="'/logo.png?company=%s' % res_company.id" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                            </a>
+                        </div>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top_menu_collapse">
+                            <span class="navbar-toggler-icon"/>
+                        </button>
+                        <nav class="nav-menu mobile-menu collapse navbar-collapse" id="top_menu_collapse">
+                            <ul class="nav navbar-nav ml-auto text-right" id="top_menu">
+                                <li class="nav-item divider" t-ignore="true" t-if="not user_id._is_public()"/>
+                                <li class="nav-item dropdown" t-ignore="true" t-if="not user_id._is_public()">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                        <b>
+                                            <span t-esc="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name"/>
+                                        </b>
+                                    </a>
+                                    <div class="dropdown-menu js_usermenu" role="menu">
+                                        <a id="o_logout" class="dropdown-item" t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div id="mobile-menu-wrap"></div>
+                    </div>
+                </div>
+            </header>
         </xpath>
-
-        <!-- Add an element after the top menu  -->
-        <xpath expr="//div[@id='wrapwrap']/header/nav/div" position="after">
-            <div class="container">
-            <div class="alert alert-info mt16" role="alert">
-                <strong>Welcome</strong> in our website!
-            </div>
-            </div>
-        </xpath>
+        
     </template>
 
 
