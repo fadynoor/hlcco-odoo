@@ -6,7 +6,7 @@
 
   'data': [
       'views/assets.xml',
-      'views/layout.xml',
+      # 'views/layout.xml',
       # 'views/pages.xml',
       
   ],

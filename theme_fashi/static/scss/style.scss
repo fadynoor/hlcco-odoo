@@ -33,7 +33,7 @@
 
 html, body {
 	height: 100%;
-	font-family: "Muli", sans-serif;
+	font-family: $as-font-family;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
   }
@@ -42,7 +42,7 @@ html, body {
 	margin: 0;
 	color: #111111;
 	font-weight: 400;
-	font-family: "Muli", sans-serif;
+	font-family: $as-font-family;
   }
   
   h1 {
@@ -70,9 +70,9 @@ html, body {
   }
   
   p {
-	font-size: 16px;
-	font-family: "Muli", sans-serif;
-	color: #636363;
+	font-size: $as-font-size-base;
+	font-family: $as-font-family;
+	color: $as-grey;
 	font-weight: 400;
 	line-height: 26px;
 	margin: 0 0 15px 0;
@@ -90,7 +90,7 @@ html, body {
 	&:hover, &:focus {
 	  text-decoration: none;
 	  outline: none;
-	  color: #fff;
+	  color: $as-white;
 	}
   }
   
@@ -110,17 +110,17 @@ html, body {
 	.product-price {
 	  font-size: 24px;
 	  font-weight: 700;
-	  color: #e7ab3c;
+	  color: $as-theme;
   
 	  span {
-		font-size: 16px;
+		font-size: $as-font-size-base;
 		font-weight: 400;
-		color: #636363;
+		color: $as-grey;
 	  }
 	}
   
 	h2 {
-	  color: #252525;
+	  color: $as-black;
 	  font-size: 36px;
 	  font-weight: 700;
 	  margin-bottom: 38px;
@@ -133,7 +133,7 @@ html, body {
 		bottom: -14px;
 		width: 80px;
 		height: 3px;
-		background: #e7ab3c;
+		background: $as-theme;
 		content: "";
 		margin: 0 auto;
 	  }
@@ -157,7 +157,7 @@ html, body {
   
   .text-white {
 	h1, h2, h3, h4, h5, h6, p, span, li, a {
-	  color: #fff;
+	  color: $as-white;
 	}
   }
   
@@ -168,15 +168,15 @@ html, body {
 	font-size: 14px;
 	font-weight: 700;
 	padding: 12px 30px;
-	color: #ffffff;
-	background: #e7ab3c;
+	color: $as-full-white;
+	background: $as-theme;
 	text-transform: uppercase;
   }
   
   .site-btn {
-	color: #ffffff;
-	background: #e7ab3c;
-	border: 1px solid #e7ab3c;
+	color: $as-full-white;
+	background: $as-theme;
+	border: 1px solid $as-theme;
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -278,7 +278,7 @@ html, body {
   
 		  span {
 			font-size: 14px;
-			color: #252525;
+			color: $as-black;
 		  }
 		}
   
@@ -286,7 +286,7 @@ html, body {
 		  content: "3";
 		  font-family: "ElegantIcons";
 		  font-size: 14px;
-		  color: #636363;
+		  color: $as-grey;
 		  float: right;
 		  position: relative;
 		  right: 0;
@@ -295,7 +295,7 @@ html, body {
 	  }
   
 	  .ddChild {
-		background: #fff;
+		background: $as-white;
 		max-width: 142px;
 		width: 100%;
 		position: relative;
@@ -335,8 +335,8 @@ html, body {
 	  float: left;
   
 	  .mail-service {
-		font-size: 16px;
-		color: #252525;
+		font-size: $as-font-size-base;
+		color: $as-black;
 		float: left;
 		border-right: 1px solid #E5E5E5;
 		padding-top: 15px;
@@ -351,7 +351,7 @@ html, body {
 	  .phone-service {
 		float: right;
 		font-size: 14px;
-		color: #252525;
+		color: $as-black;
 		line-height: 27px;
 		padding-top: 15px;
 		padding-bottom: 12px;
@@ -369,7 +369,7 @@ html, body {
 	  .login-panel {
 		float: right;
 		font-size: 14px;
-		color: #252525;
+		color: $as-black;
 		display: inline-block;
 		padding-left: 20px;
 		border-left: 1px solid #e5e5e5;
@@ -395,7 +395,7 @@ html, body {
 		border-right: 1px solid #e5e5e5;
   
 		a {
-		  color: #252525;
+		  color: $as-black;
 		  font-size: 14px;
 		  display: inline-block;
 		  margin-left: 15px;
@@ -428,8 +428,8 @@ html, body {
 		padding-top: 11px;
 		padding-bottom: 13px;
 		padding-right: 60px;
-		font-size: 16px;
-		color: #252525;
+		font-size: $as-font-size-base;
+		color: $as-black;
 		position: relative;
   
 		&:before {
@@ -448,7 +448,7 @@ html, body {
 		  top: 10px;
 		  content: "3";
 		  font-family: "ElegantIcons";
-		  font-size: 16px;
+		  font-size: $as-font-size-base;
 		  color: #b2b2b2;
 		}
 	  }
@@ -461,19 +461,19 @@ html, body {
 		  width: 100%;
 		  height: 100%;
 		  border: none;
-		  font-size: 16px;
+		  font-size: $as-font-size-base;
 		  color: #d1d1d1;
 		  padding-left: 20px;
 		}
   
 		button {
-		  font-size: 16px;
-		  color: #ffffff;
+		  font-size: $as-font-size-base;
+		  color: $as-full-white;
 		  position: absolute;
 		  right: -3px;
 		  top: -1px;
-		  border: 1px solid #e7ab3c;
-		  background: #e7ab3c;
+		  border: 1px solid $as-theme;
+		  background: $as-theme;
 		  padding: 12px 16px 12px;
 		  cursor: pointer;
 		}
@@ -490,7 +490,7 @@ html, body {
 		margin-left: 15px;
   
 		&.heart-icon a {
-		  color: #252525;
+		  color: $as-black;
 		  position: relative;
 		  display: inline-block;
   
@@ -500,8 +500,8 @@ html, body {
 			top: -1px;
 			height: 15px;
 			width: 15px;
-			background: #e7ab3c;
-			color: #ffffff;
+			background: $as-theme;
+			color: $as-full-white;
 			border-radius: 50%;
 			font-size: 11px;
 			font-weight: 700;
@@ -520,7 +520,7 @@ html, body {
 		  }
   
 		  a {
-			color: #252525;
+			color: $as-black;
 			position: relative;
 			display: inline-block;
   
@@ -530,8 +530,8 @@ html, body {
 			  top: -1px;
 			  height: 15px;
 			  width: 15px;
-			  background: #e7ab3c;
-			  color: #ffffff;
+			  background: $as-theme;
+			  color: $as-full-white;
 			  border-radius: 50%;
 			  font-size: 11px;
 			  font-weight: 700;
@@ -545,7 +545,7 @@ html, body {
 			right: -70px;
 			top: 100px;
 			width: 350px;
-			background: #ffffff;
+			background: $as-full-white;
 			z-index: 99;
 			text-align: left;
 			padding: 30px;
@@ -572,7 +572,7 @@ html, body {
   
 				  .product-selected {
 					p {
-					  color: #e7ab3c;
+					  color: $as-theme;
 					  line-height: 30px;
 					  margin-bottom: 7px;
 					}
@@ -584,8 +584,8 @@ html, body {
 				}
   
 				&.si-close {
-				  color: #252525;
-				  font-size: 16px;
+				  color: $as-black;
+				  font-size: $as-font-size-base;
 				  cursor: pointer;
 				}
 			  }
@@ -599,14 +599,14 @@ html, body {
   
 			  span {
 				font-size: 14px;
-				color: #e7ab3c;
+				color: $as-theme;
 				text-transform: uppercase;
 				letter-spacing: 0.5px;
 				float: left;
 			  }
   
 			  h5 {
-				color: #e7ab3c;
+				color: $as-theme;
 				float: right;
 			  }
 			}
@@ -618,7 +618,7 @@ html, body {
 				display: block;
 				text-align: center;
 				background: #191919;
-				color: #ffffff;
+				color: $as-full-white;
 				padding: 15px 30px 12px;
 				margin-bottom: 10px;
 			  }
@@ -628,7 +628,7 @@ html, body {
 				letter-spacing: 2px;
 				display: block;
 				text-align: center;
-				color: #ffffff;
+				color: $as-full-white;
 				padding: 15px 30px 12px;
 			  }
 			}
@@ -638,14 +638,14 @@ html, body {
 		&.cart-price {
 		  font-size: 18px;
 		  font-weight: 700;
-		  color: #252525;
+		  color: $as-black;
 		}
 	  }
 	}
   }
   
   .nav-item {
-	background: #252525;
+	background: $as-black;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -655,7 +655,7 @@ html, body {
   
 	  .depart-btn {
 		background: #3b3b3b;
-		color: #ffffff;
+		color: $as-full-white;
 		padding: 14px 84px 14px 18px;
 		cursor: pointer;
 		position: relative;
@@ -669,7 +669,7 @@ html, body {
   
 		&:before {
 		  position: absolute;
-		  color: #ffffff;
+		  color: $as-full-white;
 		  right: 20px;
 		  top: 13px;
 		  content: "";
@@ -678,8 +678,8 @@ html, body {
 		}
   
 		i {
-		  color: #ffffff;
-		  font-size: 16px;
+		  color: $as-full-white;
+		  font-size: $as-font-size-base;
 		}
   
 		span {
@@ -692,7 +692,7 @@ html, body {
 		.depart-hover {
 		  position: absolute;
 		  width: 100%;
-		  background: #fff;
+		  background: $as-white;
 		  left: 0;
 		  top: 62px;
 		  opacity: 0;
@@ -708,12 +708,12 @@ html, body {
 			list-style: none;
   
 			&.active a {
-			  color: #e7ab3c;
+			  color: $as-theme;
 			}
   
 			a {
 			  display: block;
-			  font-size: 16px;
+			  font-size: $as-font-size-base;
 			  color: #000000;
 			  padding-left: 40px;
 			  padding-top: 16px;
@@ -723,7 +723,7 @@ html, body {
 			  transition: all 0.3s;
   
 			  &:hover {
-				color: #e7ab3c;
+				color: $as-theme;
 			  }
 			}
 		  }
@@ -744,14 +744,14 @@ html, body {
 		position: relative;
   
 		&.active a {
-		  background: #e7ab3c;
+		  background: $as-theme;
 		}
   
 		a {
 		  font-size: 14px;
 		  font-weight: 700;
 		  display: block;
-		  color: #ffffff;
+		  color: $as-full-white;
 		  border-right: 2px solid #3b3b3b;
 		  text-transform: uppercase;
 		  padding: 16px 42px 15px;
@@ -762,7 +762,7 @@ html, body {
   
 		&:hover {
 		  > a {
-			background: #e7ab3c;
+			background: $as-theme;
 		  }
   
 		  .dropdown {
@@ -778,7 +778,7 @@ html, body {
 		  top: 82px;
 		  width: 200px;
 		  z-index: 99;
-		  background: #252525;
+		  background: $as-black;
 		  opacity: 0;
 		  visibility: hidden;
 		  -webkit-transition: all 0.3s;
@@ -791,7 +791,7 @@ html, body {
   
 			&:hover > a {
 			  background: transparent;
-			  color: #e7ab3c;
+			  color: $as-theme;
 			}
   
 			a {
@@ -819,7 +819,7 @@ html, body {
 	  padding-top: 210px;
   
 	  span {
-		color: #e7ab3c;
+		color: $as-theme;
 		font-size: 12px;
 		font-weight: 700;
 		letter-spacing: 2px;
@@ -832,7 +832,7 @@ html, body {
 	  }
   
 	  h1 {
-		color: #252525;
+		color: $as-black;
 		font-size: 72px;
 		font-weight: 700;
 		margin-bottom: 6px;
@@ -865,7 +865,7 @@ html, body {
 	  position: absolute;
 	  left: 47%;
 	  top: 160px;
-	  background: #e7ab3c;
+	  background: $as-theme;
 	  z-index: 1;
 	  -webkit-transform: rotate(45deg);
 	  -ms-transform: rotate(45deg);
@@ -878,7 +878,7 @@ html, body {
 		top: 5px;
 		width: calc(100% - 10px);
 		height: calc(100% - 10px);
-		border: 2px dashed #ffffff;
+		border: 2px dashed $as-full-white;
 		content: "";
 		border-radius: 50%;
 		z-index: -1;
@@ -887,14 +887,14 @@ html, body {
 	  h2 {
 		font-size: 32px;
 		font-weight: 700;
-		color: #ffffff;
+		color: $as-full-white;
 		text-transform: uppercase;
   
 		span {
 		  display: block;
 		  font-size: 32px;
 		  font-weight: 700;
-		  color: #ffffff;
+		  color: $as-full-white;
 		  text-transform: uppercase;
 		  margin-top: 6px;
 		}
@@ -947,7 +947,7 @@ html, body {
 	  position: absolute;
 	  left: 40px;
 	  top: 45%;
-	  color: #252525;
+	  color: $as-black;
   
 	  &:hover {
 		color: #dfad51;
@@ -982,7 +982,7 @@ html, body {
 	  position: absolute;
 	  left: 35px;
 	  top: 30px;
-	  border: 13px solid #ffffff;
+	  border: 13px solid $as-full-white;
 	  content: "";
 	  opacity: 0.3;
 	  width: calc(100% - 70px);
@@ -1016,10 +1016,10 @@ html, body {
 	  height: 100%;
   
 	  h4 {
-		color: #252525;
+		color: $as-black;
 		font-weight: 700;
 		padding: 11px 28px;
-		background: #ffffff;
+		background: $as-full-white;
 		border-radius: 2px;
 	  }
 	}
@@ -1044,14 +1044,14 @@ html, body {
 	padding-top: 285px;
   
 	h2 {
-	  color: #ffffff;
+	  color: $as-full-white;
 	  font-size: 48px;
 	  font-weight: 700;
 	  margin-bottom: 18px;
 	}
   
 	a {
-	  color: #ffffff;
+	  color: $as-full-white;
 	  font-size: 18px;
 	  font-weight: 500;
 	  display: inline-block;
@@ -1063,7 +1063,7 @@ html, body {
 		bottom: -4px;
 		width: 100%;
 		height: 2px;
-		background: #ffffff;
+		background: $as-full-white;
 		content: "";
 	  }
 	}
@@ -1145,7 +1145,7 @@ html, body {
   
 		&.active {
 		  width: 30px;
-		  background: #252525;
+		  background: $as-black;
 		  border-radius: 50px;
 		}
 	  }
@@ -1175,7 +1175,7 @@ html, body {
 	  }
   
 	  .sale {
-		color: #ffffff;
+		color: $as-full-white;
 		font-size: 10px;
 		background: #76BC42;
 		position: absolute;
@@ -1185,13 +1185,13 @@ html, body {
 		text-transform: uppercase;
   
 		&.pp-sale {
-		  background: #e7ab3c;
+		  background: $as-theme;
 		}
 	  }
   
 	  .icon {
 		font-size: 20px;
-		color: #252525;
+		color: $as-black;
 		position: absolute;
 		right: 21px;
 		top: -15px;
@@ -1215,17 +1215,17 @@ html, body {
 		li {
 		  list-style: none;
 		  display: inline-block;
-		  background: #ffffff;
+		  background: $as-full-white;
   
 		  &.w-icon.active a {
-			background: #e7ab3c;
-			color: #ffffff;
+			background: $as-theme;
+			color: $as-full-white;
 		  }
   
 		  a {
-			font-size: 16px;
+			font-size: $as-font-size-base;
 			font-weight: 700;
-			color: #252525;
+			color: $as-black;
 			display: block;
 			padding: 16px 18px 12px 19px;
 		  }
@@ -1250,12 +1250,12 @@ html, body {
 		display: block;
   
 		h5 {
-		  color: #252525;
+		  color: $as-black;
 		}
 	  }
   
 	  .product-price {
-		color: #e7ab3c;
+		color: $as-theme;
 		font-size: 20px;
 		font-weight: 700;
   
@@ -1286,7 +1286,7 @@ html, body {
   
 	.cd-item {
 	  display: inline-block;
-	  background: #ffffff;
+	  background: $as-full-white;
 	  margin-right: 35px;
 	  padding: 10px 14px;
 	  border-radius: 5px;
@@ -1296,14 +1296,14 @@ html, body {
 	  }
   
 	  span {
-		color: #e7ab3c;
+		color: $as-theme;
 		font-weight: 700;
 		line-height: 40px;
 		font-size: 36px;
 	  }
   
 	  p {
-		font-size: 16px;
+		font-size: $as-font-size-base;
 		color: #b2b2b2;
 		margin-bottom: 0;
 		text-transform: uppercase;
@@ -1376,14 +1376,14 @@ html, body {
   
 		i {
 		  font-size: 30px;
-		  color: #ffffff;
+		  color: $as-full-white;
 		}
   
 		h5 {
 		  margin-top: 14px;
   
 		  a {
-			color: #ffffff;
+			color: $as-full-white;
 		  }
 		}
 	  }
@@ -1417,13 +1417,13 @@ html, body {
 		margin-bottom: 8px;
   
 		.tag-item {
-		  font-size: 16px;
+		  font-size: $as-font-size-base;
 		  color: #a2a1a1;
 		  display: inline-block;
 		  margin-right: 15px;
   
 		  i {
-			color: #e7ab3c;
+			color: $as-theme;
 		  }
 		}
 	  }
@@ -1432,7 +1432,7 @@ html, body {
 		display: block;
   
 		h4 {
-		  color: #252525;
+		  color: $as-black;
 		  font-weight: 700;
 		  line-height: 30px;
 		  margin-bottom: 16px;
@@ -1461,7 +1461,7 @@ html, body {
 		display: table;
   
 		h6 {
-		  color: #252525;
+		  color: $as-black;
 		  line-height: 20px;
 		  font-weight: 700;
 		  text-transform: uppercase;
@@ -1469,7 +1469,7 @@ html, body {
   
 		p {
 		  margin-bottom: 0;
-		  color: #252525;
+		  color: $as-black;
 		  line-height: 20px;
 		}
 	  }
@@ -1523,7 +1523,7 @@ html, body {
 	ul li {
 	  list-style: none;
 	  color: #b2b2b2;
-	  font-size: 16px;
+	  font-size: $as-font-size-base;
 	  line-height: 30px;
 	}
   
@@ -1535,7 +1535,7 @@ html, body {
 		height: 40px;
 		width: 40px;
 		background: #434445;
-		color: #ffffff;
+		color: $as-full-white;
 		text-align: center;
 		line-height: 40px;
 		border-radius: 50%;
@@ -1553,7 +1553,7 @@ html, body {
 		  top: 0;
 		  height: 100%;
 		  width: 100%;
-		  background: #e7ab3c;
+		  background: $as-theme;
 		  content: "";
 		  border-radius: 50%;
 		  opacity: 0;
@@ -1571,7 +1571,7 @@ html, body {
 	margin-bottom: 30px;
   
 	h5 {
-	  color: #ffffff;
+	  color: $as-full-white;
 	  font-weight: 700;
 	  margin-bottom: 26px;
 	}
@@ -1581,7 +1581,7 @@ html, body {
   
 	  a {
 		line-height: 36px;
-		font-size: 16px;
+		font-size: $as-font-size-base;
 		color: #b2b2b2;
 	  }
 	}
@@ -1589,7 +1589,7 @@ html, body {
   
   .newslatter-item {
 	h5 {
-	  color: #ffffff;
+	  color: $as-full-white;
 	  font-weight: 700;
 	  margin-bottom: 30px;
 	}
@@ -1607,7 +1607,7 @@ html, body {
 		background: #303030;
 		width: 100%;
 		height: 46px;
-		font-size: 16px;
+		font-size: $as-font-size-base;
 		border: none;
 		padding-left: 20px;
   
@@ -1618,12 +1618,12 @@ html, body {
   
 	  button {
 		display: inline-block;
-		color: #ffffff;
-		background: #e7ab3c;
+		color: $as-full-white;
+		background: $as-theme;
 		font-size: 13px;
 		font-weight: 700;
 		text-transform: uppercase;
-		border: 1px solid #e7ab3c;
+		border: 1px solid $as-theme;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -1640,7 +1640,7 @@ html, body {
   
 	.copyright-text {
 	  float: left;
-	  font-size: 16px;
+	  font-size: $as-font-size-base;
 	  color: #b2b2b2;
   
 	  a {
@@ -1652,7 +1652,7 @@ html, body {
 	  }
   
 	  a:hover {
-		color: #e7ab3c;
+		color: $as-theme;
 	  }
 	}
   
@@ -1672,13 +1672,13 @@ html, body {
 	padding: 15px 0;
   
 	&.product-more a:nth-child(1):after {
-	  color: #252525;
+	  color: $as-black;
 	}
   
 	a {
 	  display: inline-block;
-	  font-size: 16px;
-	  color: #252525;
+	  font-size: $as-font-size-base;
+	  color: $as-black;
 	  margin-right: 28px;
 	  position: relative;
   
@@ -1688,7 +1688,7 @@ html, body {
 		top: 0px;
 		content: "";
 		font-family: "FontAwesome";
-		font-size: 16px;
+		font-size: $as-font-size-base;
 		color: #b2b2b2;
 	  }
 	}
@@ -1712,7 +1712,7 @@ html, body {
 	margin-bottom: 45px;
   
 	.fw-title {
-	  color: #252525;
+	  color: $as-black;
 	  font-size: 22px;
 	  font-weight: 700;
 	  margin-bottom: 26px;
@@ -1723,8 +1723,8 @@ html, body {
   
 	  a {
 		display: inline-block;
-		color: #636363;
-		font-size: 16px;
+		color: $as-grey;
+		font-size: $as-font-size-base;
 		line-height: 39px;
 	  }
 	}
@@ -1742,8 +1742,8 @@ html, body {
 		  visibility: hidden;
   
 		  &:checked ~ span {
-			background: #e7ab3c;
-			border-color: #e7ab3c;
+			background: $as-theme;
+			border-color: $as-theme;
 		  }
 		}
   
@@ -1791,8 +1791,8 @@ html, body {
 		  }
   
 		  input {
-			font-size: 16px;
-			color: #252525;
+			font-size: $as-font-size-base;
+			color: $as-black;
 			max-width: 20%;
 			text-align: center;
 			border: 1px solid #ebebeb;
@@ -1817,7 +1817,7 @@ html, body {
 			height: 16px;
 			width: 16px;
 			border-radius: 50%;
-			background: #ffffff;
+			background: $as-full-white;
 			border: none;
 			-webkit-box-shadow: 1px 6px 14px -4px #425c6d;
 			box-shadow: 1px 6px 14px -4px #425c6d;
@@ -1830,7 +1830,7 @@ html, body {
 		  border-radius: 0;
   
 		  &.ui-corner-all.ui-widget-header:last-child {
-			background: #e7ab3c;
+			background: $as-theme;
 		  }
 		}
 	  }
@@ -1838,9 +1838,9 @@ html, body {
   
 	.filter-btn {
 	  font-size: 14px;
-	  color: #ffffff;
+	  color: $as-full-white;
 	  font-weight: 700;
-	  background: #e7ab3c;
+	  background: $as-theme;
 	  padding: 7px 20px 5px;
 	  border-radius: 2px;
 	  display: inline-block;
@@ -1861,8 +1861,8 @@ html, body {
 		cursor: pointer;
 		position: relative;
 		padding-left: 33px;
-		font-size: 16px;
-		color: #636363;
+		font-size: $as-font-size-base;
+		color: $as-grey;
   
 		&.cs-violet:before {
 		  background: #8230E3;
@@ -1890,7 +1890,7 @@ html, body {
 		  top: 4px;
 		  height: 18px;
 		  width: 18px;
-		  background: #252525;
+		  background: $as-black;
 		  border-radius: 50%;
 		  content: "";
 		}
@@ -1911,8 +1911,8 @@ html, body {
 	  }
   
 	  label {
-		font-size: 16px;
-		color: #252525;
+		font-size: $as-font-size-base;
+		color: $as-black;
 		font-weight: 700;
 		height: 40px;
 		width: 47px;
@@ -1923,16 +1923,16 @@ html, body {
 		cursor: pointer;
   
 		&.active {
-		  background: #252525;
-		  color: #ffffff;
+		  background: $as-black;
+		  color: $as-full-white;
 		}
 	  }
 	}
   
 	.fw-tags a {
 	  display: inline-block;
-	  font-size: 16px;
-	  color: #636363;
+	  font-size: $as-font-size-base;
+	  color: $as-grey;
 	  padding: 5px 15px;
 	  border: 1px solid #ebebeb;
 	  margin-right: 5px;
@@ -1977,7 +1977,7 @@ html, body {
 		}
   
 		span {
-		  font-size: 16px;
+		  font-size: $as-font-size-base;
 		  color: #4c4c4c;
 		}
 	  }
@@ -1998,15 +1998,15 @@ html, body {
 		  right: 48px;
 		  top: 0;
 		  content: "09";
-		  font-size: 16px;
-		  color: #252525;
+		  font-size: $as-font-size-base;
+		  color: $as-black;
 		}
 	  }
 	}
   
 	p {
 	  margin-bottom: 0;
-	  color: #636363;
+	  color: $as-grey;
 	  line-height: 39px;
 	}
   }
@@ -2030,7 +2030,7 @@ html, body {
 	a {
 	  font-size: 18px;
 	  font-weight: 700;
-	  color: #252525;
+	  color: $as-black;
 	  position: relative;
 	  display: inline-block;
   
@@ -2040,7 +2040,7 @@ html, body {
 		bottom: -4px;
 		width: 100%;
 		height: 2px;
-		background: #e7ab3c;
+		background: $as-theme;
 		content: "";
 	  }
 	}
@@ -2092,7 +2092,7 @@ html, body {
 	  height: 100%;
 	  left: 0;
 	  top: 0;
-	  border: 1px solid #e7ab3c;
+	  border: 1px solid $as-theme;
 	  z-index: 1;
 	}
   }
@@ -2100,7 +2100,7 @@ html, body {
   .ps-slider .owl-nav button[type=button] {
 	height: 30px;
 	width: 30px;
-	background: #ffffff;
+	background: $as-full-white;
 	color: #a7a7a7;
 	text-align: center;
 	line-height: 30px;
@@ -2137,12 +2137,12 @@ html, body {
 	  }
   
 	  h3 {
-		color: #252525;
+		color: $as-black;
 		font-weight: 700;
 	  }
   
 	  .heart-icon {
-		color: #252525;
+		color: $as-black;
 		font-size: 18px;
 		position: absolute;
 		right: 0;
@@ -2170,11 +2170,11 @@ html, body {
 	  margin-bottom: 24px;
   
 	  p {
-		color: #636363;
+		color: $as-grey;
 	  }
   
 	  h4 {
-		color: #e7ab3c;
+		color: $as-theme;
 		font-weight: 700;
   
 		span {
@@ -2192,7 +2192,7 @@ html, body {
 	  margin-bottom: 25px;
   
 	  h6 {
-		color: #252525;
+		color: $as-black;
 		font-weight: 700;
 		float: left;
 		margin-right: 28px;
@@ -2213,7 +2213,7 @@ html, body {
 		  label {
 			height: 20px;
 			width: 20px;
-			background: #252525;
+			background: $as-black;
 			border-radius: 50%;
 			cursor: pointer;
 			margin-bottom: 0;
@@ -2247,8 +2247,8 @@ html, body {
 		}
   
 		label {
-		  font-size: 16px;
-		  color: #252525;
+		  font-size: $as-font-size-base;
+		  color: $as-black;
 		  font-weight: 700;
 		  height: 40px;
 		  width: 47px;
@@ -2259,8 +2259,8 @@ html, body {
 		  cursor: pointer;
   
 		  &.active {
-			background: #252525;
-			color: #ffffff;
+			background: $as-black;
+			color: $as-full-white;
 		  }
 		}
 	  }
@@ -2315,12 +2315,12 @@ html, body {
   
 	  li {
 		list-style: none;
-		font-size: 16px;
-		color: #636363;
+		font-size: $as-font-size-base;
+		color: $as-grey;
 		line-height: 30px;
   
 		span {
-		  color: #252525;
+		  color: $as-black;
 		  font-weight: 700;
 		  text-transform: uppercase;
 		}
@@ -2331,8 +2331,8 @@ html, body {
 	  overflow: hidden;
   
 	  .p-code {
-		font-size: 16px;
-		color: #252525;
+		font-size: $as-font-size-base;
+		color: $as-black;
 		float: left;
 	  }
   
@@ -2341,7 +2341,7 @@ html, body {
   
 		a {
 		  display: inline-block;
-		  color: #252525;
+		  color: $as-black;
 		  font-size: 14px;
 		  margin-left: 15px;
 		}
@@ -2360,7 +2360,7 @@ html, body {
   
 	a {
 	  display: inline-block;
-	  font-size: 16px;
+	  font-size: $as-font-size-base;
 	  font-weight: 700;
 	  color: #b2b2b2;
 	  text-transform: uppercase;
@@ -2371,7 +2371,7 @@ html, body {
 	  border-bottom: 1px solid #ebebeb;
   
 	  &.active {
-		color: #252525;
+		color: $as-black;
   
 		&:before {
 		  opacity: 1;
@@ -2384,7 +2384,7 @@ html, body {
 		top: -1px;
 		width: 100%;
 		height: 5px;
-		background: #e7ab3c;
+		background: $as-theme;
 		content: "";
 		opacity: 0;
 	  }
@@ -2395,7 +2395,7 @@ html, body {
 	padding-top: 40px;
   
 	h5 {
-	  color: #252525;
+	  color: $as-black;
 	  font-weight: 700;
 	  margin-bottom: 23px;
 	}
@@ -2425,7 +2425,7 @@ html, body {
 		  width: 310px;
 		  text-align: left;
 		  padding-left: 34px;
-		  font-size: 16px;
+		  font-size: $as-font-size-base;
 		  color: #4c4c4c;
 		  font-weight: 700;
 		  text-transform: uppercase;
@@ -2446,20 +2446,20 @@ html, body {
 		}
   
 		.p-price {
-		  color: #e7ab3c;
-		  font-size: 16px;
+		  color: $as-theme;
+		  font-size: $as-font-size-base;
 		  font-weight: 700;
 		}
   
 		.cart-add {
-		  font-size: 16px;
-		  color: #252525;
+		  font-size: $as-font-size-base;
+		  color: $as-black;
 		  font-weight: 700;
 		  text-transform: uppercase;
 		}
   
 		.p-stock, .p-size, .p-code {
-		  font-size: 16px;
+		  font-size: $as-font-size-base;
 		  color: #4c4c4c;
 		  font-weight: 700;
 		}
@@ -2478,7 +2478,7 @@ html, body {
 		  display: inline-block;
 		  height: 20px;
 		  width: 20px;
-		  background: #252525;
+		  background: $as-black;
 		  border-radius: 50%;
 		}
 	  }
@@ -2523,7 +2523,7 @@ html, body {
 		}
   
 		h5 {
-		  color: #252525;
+		  color: $as-black;
 		  font-weight: 700;
 		  margin-top: 10px;
 		  margin-bottom: 10px;
@@ -2550,7 +2550,7 @@ html, body {
   
 		.at-reply {
 		  font-size: 14px;
-		  color: #636363;
+		  color: $as-grey;
 		}
 	  }
 	}
@@ -2560,7 +2560,7 @@ html, body {
 	  padding-top: 10px;
   
 	  h6 {
-		color: #252525;
+		color: $as-black;
 	  }
   
 	  .rating i {
@@ -2581,8 +2581,8 @@ html, body {
 	  .comment-form {
 		input {
 		  width: 100%;
-		  font-size: 16px;
-		  color: #636363;
+		  font-size: $as-font-size-base;
+		  color: $as-grey;
 		  height: 50px;
 		  border: 1px solid #ebebeb;
 		  border-radius: 5px;
@@ -2593,8 +2593,8 @@ html, body {
 		textarea {
 		  width: 100%;
 		  resize: none;
-		  font-size: 16px;
-		  color: #636363;
+		  font-size: $as-font-size-base;
+		  color: $as-grey;
 		  height: 116px;
 		  border: 1px solid #ebebeb;
 		  border-radius: 5px;
@@ -2642,8 +2642,8 @@ html, body {
   
 	  tr {
 		th {
-		  font-size: 16px;
-		  color: #252525;
+		  font-size: $as-font-size-base;
+		  color: $as-black;
 		  font-weight: 700;
 		  border-bottom: 1px solid #ebebeb;
 		  text-align: center;
@@ -2671,20 +2671,20 @@ html, body {
 			text-align: left;
   
 			h5 {
-			  color: #252525;
+			  color: $as-black;
 			}
 		  }
   
 		  &.p-price {
 			width: 16%;
-			color: #e7ab3c;
-			font-size: 16px;
+			color: $as-theme;
+			font-size: $as-font-size-base;
 			font-weight: 700;
 		  }
   
 		  &.total-price {
-			color: #e7ab3c;
-			font-size: 16px;
+			color: $as-theme;
+			font-size: $as-font-size-base;
 			font-weight: 700;
 		  }
   
@@ -2738,8 +2738,8 @@ html, body {
 		  }
   
 		  &.close-td {
-			font-size: 16px;
-			color: #252525;
+			font-size: $as-font-size-base;
+			color: $as-black;
 			width: 8%;
   
 			i {
@@ -2757,14 +2757,14 @@ html, body {
 	.continue-shop {
 	  color: #b2b2b2;
 	  border: 2px solid #ebebeb;
-	  background: #ffffff;
+	  background: $as-full-white;
 	  margin-right: 8px;
 	  padding: 12px 20px 12px 20px;
 	  margin-bottom: 10px;
 	}
   
 	.up-cart {
-	  color: #252525;
+	  color: $as-black;
 	  background: #f3f3f3;
 	  border: 2px solid #ebebeb;
 	  padding: 12px 20px 12px 20px;
@@ -2797,7 +2797,7 @@ html, body {
 		position: absolute;
 		right: 0;
 		top: 0;
-		color: #252525;
+		color: $as-black;
 		background: transparent;
 		border: 1px solid transparent;
 		padding: 13px 25px 10px 35px;
@@ -2816,16 +2816,16 @@ html, body {
   
 	  li {
 		list-style: none;
-		font-size: 16px;
+		font-size: $as-font-size-base;
 		font-weight: 700;
-		color: #252525;
+		color: $as-black;
 		text-transform: uppercase;
 		overflow: hidden;
   
 		&.subtotal {
 		  font-weight: 400;
 		  text-transform: capitalize;
-		  border-bottom: 1px solid #ffffff;
+		  border-bottom: 1px solid $as-full-white;
 		  padding-bottom: 14px;
   
 		  span {
@@ -2837,7 +2837,7 @@ html, body {
 		  padding-top: 10px;
   
 		  span {
-			color: #e7ab3c;
+			color: $as-theme;
 		  }
 		}
   
@@ -2850,8 +2850,8 @@ html, body {
 	.proceed-btn {
 	  font-size: 14px;
 	  font-weight: 700;
-	  color: #ffffff;
-	  background: #252525;
+	  color: $as-full-white;
+	  background: $as-black;
 	  text-transform: uppercase;
 	  padding: 15px 25px 14px 25px;
 	  display: block;
@@ -2872,8 +2872,8 @@ html, body {
 	margin-bottom: 50px;
   
 	.content-btn {
-	  color: #252525;
-	  font-size: 16px;
+	  color: $as-black;
+	  font-size: $as-font-size-base;
 	  border: 2px solid #ebebeb;
 	  padding: 14px 20px;
 	  background: #f3f3f3;
@@ -2882,8 +2882,8 @@ html, body {
 	}
   
 	input {
-	  color: #252525;
-	  font-size: 16px;
+	  color: $as-black;
+	  font-size: $as-font-size-base;
 	  border: 2px solid #ebebeb;
 	  padding: 14px 20px;
 	  background: #f3f3f3;
@@ -2895,14 +2895,14 @@ html, body {
   
   .checkout-form {
 	h4 {
-	  color: #252525;
+	  color: $as-black;
 	  font-weight: 700;
 	  margin-bottom: 30px;
 	}
   
 	label {
-	  color: #252525;
-	  font-size: 16px;
+	  color: $as-black;
+	  font-size: $as-font-size-base;
 	  margin-bottom: 5px;
   
 	  span {
@@ -2931,15 +2931,15 @@ html, body {
 		padding-left: 32px;
 		margin-bottom: 0;
 		font-size: 14px;
-		color: #252525;
+		color: $as-black;
   
 		input {
 		  position: absolute;
 		  visibility: hidden;
   
 		  &:checked ~ span {
-			background: #e7ab3c;
-			border-color: #e7ab3c;
+			background: $as-theme;
+			border-color: $as-theme;
 		  }
 		}
   
@@ -2957,7 +2957,7 @@ html, body {
 			top: 0;
 			width: 9px;
 			height: 6px;
-			border: solid #ffffff;
+			border: solid $as-full-white;
 			border-width: 2px 2px 0px 0px;
 			-webkit-transform: rotate(127deg);
 			-ms-transform: rotate(127deg);
@@ -2979,7 +2979,7 @@ html, body {
   
 		li {
 		  list-style: none;
-		  color: #252525;
+		  color: $as-black;
 		  font-size: 14px;
 		  font-weight: 700;
 		  text-transform: uppercase;
@@ -3003,7 +3003,7 @@ html, body {
 		  }
   
 		  &.total-price span {
-			color: #e7ab3c;
+			color: $as-theme;
 		  }
   
 		  span {
@@ -3021,15 +3021,15 @@ html, body {
 		  padding-left: 32px;
 		  margin-bottom: 0;
 		  font-size: 14px;
-		  color: #252525;
+		  color: $as-black;
   
 		  input {
 			position: absolute;
 			visibility: hidden;
   
 			&:checked ~ span {
-			  background: #e7ab3c;
-			  border-color: #e7ab3c;
+			  background: $as-theme;
+			  border-color: $as-theme;
 			}
 		  }
   
@@ -3047,7 +3047,7 @@ html, body {
 			  top: 0;
 			  width: 9px;
 			  height: 6px;
-			  border: solid #ffffff;
+			  border: solid $as-full-white;
 			  border-width: 2px 2px 0px 0px;
 			  -webkit-transform: rotate(127deg);
 			  -ms-transform: rotate(127deg);
@@ -3087,7 +3087,7 @@ html, body {
 	  margin-bottom: 55px;
   
 	  h4 {
-		color: #252525;
+		color: $as-black;
 		font-weight: 700;
 		margin-bottom: 12px;
 	  }
@@ -3108,9 +3108,9 @@ html, body {
 		  position: absolute;
 		  right: 0;
 		  top: 0;
-		  color: #ffffff;
-		  background: #252525;
-		  border: 1px solid #252525;
+		  color: $as-full-white;
+		  background: $as-black;
+		  border: 1px solid $as-black;
 		  height: 46px;
 		  padding: 0 15px;
 		  cursor: pointer;
@@ -3122,7 +3122,7 @@ html, body {
 	  margin-bottom: 41px;
   
 	  h4 {
-		color: #252525;
+		color: $as-black;
 		font-weight: 700;
 		margin-bottom: 14px;
 	  }
@@ -3131,8 +3131,8 @@ html, body {
 		list-style: none;
   
 		a {
-		  font-size: 16px;
-		  color: #636363;
+		  font-size: $as-font-size-base;
+		  color: $as-grey;
 		  line-height: 39px;
 		}
 	  }
@@ -3142,7 +3142,7 @@ html, body {
 	  margin-bottom: 55px;
   
 	  h4 {
-		color: #252525;
+		color: $as-black;
 		font-weight: 700;
 		margin-bottom: 28px;
 	  }
@@ -3166,7 +3166,7 @@ html, body {
 		  padding-left: 16px;
   
 		  h6 {
-			color: #252525;
+			color: $as-black;
 			line-height: 24px;
 			font-weight: 700;
 			margin-bottom: 10px;
@@ -3177,7 +3177,7 @@ html, body {
 			font-size: 12px;
 			font-weight: 700;
 			text-transform: uppercase;
-			color: #e7ab3c;
+			color: $as-theme;
 			letter-spacing: 2px;
 			line-height: 20px;
   
@@ -3194,15 +3194,15 @@ html, body {
   
 	.blog-tags {
 	  h4 {
-		color: #252525;
+		color: $as-black;
 		font-weight: 700;
 		margin-bottom: 20px;
 	  }
   
 	  .tag-item a {
 		display: inline-block;
-		font-size: 16px;
-		color: #636363;
+		font-size: $as-font-size-base;
+		color: $as-grey;
 		padding: 5px 15px;
 		border: 1px solid #ebebeb;
 		margin-right: 5px;
@@ -3223,7 +3223,7 @@ html, body {
 	  padding-top: 24px;
   
 	  h4 {
-		color: #252525;
+		color: $as-black;
 		font-weight: 700;
 		line-height: 30px;
 		margin-bottom: 16px;
@@ -3234,7 +3234,7 @@ html, body {
 		font-size: 14px;
 		font-weight: 700;
 		text-transform: uppercase;
-		color: #e7ab3c;
+		color: $as-theme;
 		letter-spacing: 2px;
 		line-height: 20px;
   
@@ -3263,7 +3263,7 @@ html, body {
 	  margin-bottom: 25px;
   
 	  h2 {
-		color: #252525;
+		color: $as-black;
 		font-weight: 700;
 		margin-bottom: 15px;
 	  }
@@ -3273,7 +3273,7 @@ html, body {
 		font-size: 12px;
 		font-weight: 700;
 		text-transform: uppercase;
-		color: #e7ab3c;
+		color: $as-theme;
 		letter-spacing: 2px;
 		line-height: 20px;
 		display: inline-block;
@@ -3325,7 +3325,7 @@ html, body {
 		  float: left;
 		  font-size: 60px;
 		  text-transform: uppercase;
-		  color: #252525;
+		  color: $as-black;
 		  margin-top: 14px;
 		  margin-right: 10px;
 		}
@@ -3337,7 +3337,7 @@ html, body {
   
 	  p {
 		position: relative;
-		color: #252525;
+		color: $as-black;
 		font-size: 20px;
 		font-weight: 700;
 		line-height: 30px;
@@ -3356,7 +3356,7 @@ html, body {
 		  top: 0;
 		  height: 88px;
 		  width: 3px;
-		  background: #e7ab3c;
+		  background: $as-theme;
 		  content: "";
 		}
 	  }
@@ -3395,7 +3395,7 @@ html, body {
   
 		  i {
 			font-size: 18px;
-			color: #e7ab3c;
+			color: $as-theme;
 		  }
 		}
 	  }
@@ -3414,7 +3414,7 @@ html, body {
 		}
   
 		span {
-		  font-size: 16px;
+		  font-size: $as-font-size-base;
 		  color: #2d292f;
 		}
 	  }
@@ -3458,7 +3458,7 @@ html, body {
   
 		  h5 {
 			font-size: 20px;
-			color: #252525;
+			color: $as-black;
 			line-height: 26px;
 			font-weight: 700;
 			margin-top: 10px;
@@ -3501,7 +3501,7 @@ html, body {
   
 		  h5 {
 			font-size: 20px;
-			color: #252525;
+			color: $as-black;
 			line-height: 26px;
 			font-weight: 700;
 			margin-top: 10px;
@@ -3527,7 +3527,7 @@ html, body {
 		  display: block;
   
 		  h5 {
-			color: #252525;
+			color: $as-black;
 			font-weight: 700;
 			margin-bottom: 13px;
 		  }
@@ -3552,8 +3552,8 @@ html, body {
 	  .comment-form {
 		input {
 		  width: 100%;
-		  font-size: 16px;
-		  color: #636363;
+		  font-size: $as-font-size-base;
+		  color: $as-grey;
 		  height: 50px;
 		  border: 1px solid #ebebeb;
 		  border-radius: 5px;
@@ -3564,8 +3564,8 @@ html, body {
 		textarea {
 		  width: 100%;
 		  resize: none;
-		  font-size: 16px;
-		  color: #636363;
+		  font-size: $as-font-size-base;
+		  color: $as-grey;
 		  height: 116px;
 		  border: 1px solid #ebebeb;
 		  border-radius: 5px;
@@ -3604,7 +3604,7 @@ html, body {
   
 	  i {
 		font-size: 48px;
-		color: #e7ab3c;
+		color: $as-theme;
 	  }
 	}
   }
@@ -3622,14 +3622,14 @@ html, body {
 	margin-bottom: 30px;
   
 	h4 {
-	  color: #252525;
+	  color: $as-black;
 	  font-weight: 700;
 	  margin-bottom: 16px;
 	}
   }
   
   .contact-widget .cw-item {
-	background: #ffffff;
+	background: $as-full-white;
 	margin-bottom: 11px;
 	-webkit-box-shadow: 0px 8px 35px 10px #E8E8E8;
 	box-shadow: 0px 8px 35px 10px #E8E8E8;
@@ -3654,12 +3654,12 @@ html, body {
   
 	  span {
 		color: #b2b2b2;
-		font-size: 16px;
+		font-size: $as-font-size-base;
 	  }
   
 	  p {
 		font-size: 18px;
-		color: #252525;
+		color: $as-black;
 		margin-bottom: 0;
 	  }
 	}
@@ -3679,8 +3679,8 @@ html, body {
 	.comment-form {
 	  input {
 		width: 100%;
-		font-size: 16px;
-		color: #636363;
+		font-size: $as-font-size-base;
+		color: $as-grey;
 		height: 50px;
 		border: 1px solid #ebebeb;
 		border-radius: 5px;
@@ -3691,8 +3691,8 @@ html, body {
 	  textarea {
 		width: 100%;
 		resize: none;
-		font-size: 16px;
-		color: #636363;
+		font-size: $as-font-size-base;
+		color: $as-grey;
 		height: 150px;
 		border: 1px solid #ebebeb;
 		border-radius: 5px;
@@ -3723,7 +3723,7 @@ html, body {
   
 	  .card-heading {
 		font-size: 22px;
-		color: #252525;
+		color: $as-black;
 		font-weight: 700;
 		cursor: pointer;
   
@@ -3767,8 +3767,8 @@ html, body {
 		  font-family: "FontAwesome";
 		  float: left;
 		  font-size: 13px;
-		  color: #ffffff;
-		  background: #e7ab3c;
+		  color: $as-full-white;
+		  background: $as-theme;
 		}
 	  }
   
@@ -3793,8 +3793,8 @@ html, body {
 		font-family: "FontAwesome";
 		float: left;
 		font-size: 13px;
-		color: #ffffff;
-		background: #e7ab3c;
+		color: $as-full-white;
+		background: $as-theme;
 	  }
 	}
   }
@@ -3809,7 +3809,7 @@ html, body {
   }
   
   .register-form h2, .login-form h2 {
-	color: #252525;
+	color: $as-black;
 	font-weight: 700;
 	text-align: center;
 	margin-bottom: 35px;
@@ -3822,7 +3822,7 @@ html, body {
   .register-form form .group-input label, .login-form form .group-input label {
 	display: block;
 	font-size: 18px;
-	color: #252525;
+	color: $as-black;
 	margin-bottom: 13px;
   }
   
@@ -3856,7 +3856,7 @@ html, body {
   }
   
   .register-form .switch-login .or-login, .login-form .switch-login .or-login {
-	color: #252525;
+	color: $as-black;
 	font-size: 14px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -3927,7 +3927,7 @@ html, body {
 			  top: -2px;
 			  width: 13px;
 			  height: 6px;
-			  border: solid #ffffff;
+			  border: solid $as-full-white;
 			  border-width: 2px 2px 0px 0px;
 			  -webkit-transform: rotate(127deg);
 			  -ms-transform: rotate(127deg);
@@ -4274,7 +4274,7 @@ html, body {
   
 	.slicknav_btn {
 	  border-radius: 0;
-	  background-color: #e7ab3c;
+	  background-color: $as-theme;
 	  display: inline-block;
 	  right: -16px;
 	}
@@ -4289,15 +4289,15 @@ html, body {
   
 		&:hover {
 		  border-radius: 0;
-		  background: #e7ab3c;
-		  color: #fff;
+		  background: $as-theme;
+		  color: $as-white;
 		}
 	  }
   
 	  .slicknav_row:hover {
 		border-radius: 0;
-		background: #e7ab3c;
-		color: #fff;
+		background: $as-theme;
+		color: $as-white;
 	  }
 	}
   
