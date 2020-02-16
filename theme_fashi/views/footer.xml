@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="Custom_footer1" inherit_id="website.footer_custom" name="mini Footers">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <footer class="footer-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-left">
+                                <h5>Hlc &amp; co.</h5>
+                                <ul>
+                                    <li>Address: <span t-field="res_company.street"/><span t-field="res_company.city"/> 
+                                    <span t-field="res_company.country_id"/></li>
+                                    <li>Phone: <span t-field="res_company.phone"></span></li>
+                                    <li>Email: <a t-att-href="'mailto:%s' % res_company.email"><span t-field="res_company.email"></span></a></li>
+                                </ul>
+                                <div class="footer-social">
+                                    <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook"></i></a>
+                                    <a t-att-href="website.social_instagram" t-if="website.social_instagram"><i class="fa fa-instagram"></i></a>
+                                    <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"></i></a>
+                                    <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 offset-lg-1">
+                            <div class="footer-widget">
+                                <h5>Information</h5>
+                                <ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/page/website.aboutus">Blog</a></li>
+                                    <li><a href="/page/website.aboutus">About Us</a></li>
+                                    <li><a href="#">Delivery Options</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="#">Terms and Conditions</a></li>
+                                    <li><a href="/page/website.contactus">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="newslatter-item">
+                                <h5>Join Our Newsletter Now</h5>
+                                <p>Get E-mail updates about our latest shop and special offers.</p>
+                                <form action="#" class="subscribe-form">
+                                    <input type="text" placeholder="Enter Your Mail"/>
+                                    <button type="button">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-reserved">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="copyright-text">
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright © <span t-field="res_company.name"/> <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </div>
+                                <div class="payment-pic">
+                                    <img src="/theme_fashi/static/img/payment-method.png" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </xpath>
+    </template>
+</odoo>
