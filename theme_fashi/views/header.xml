@@ -16,26 +16,26 @@
                 <div class="container">
                     <div class="inner-header">
                         <div class="row">
-                            <div class="col-lg-2 col-md-2">
+                            <div class="col-lg-12 col-md-12 text-center">
                                 <div class="logo">
                                     <a href="/">
                                         <img t-att-src="'/logo.png?company=%s' % res_company.id" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-7 col-md-7">
+                            <!-- <div class="col-lg-7 col-md-7">
                                 <div class="advanced-search">
                                     <div class="input-group" style="max-width: 100%">
                                         <input type="text" placeholder="What do you need?"/>
                                         <button type="button"><i class="ti-search"></i></button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3">
-                                <ul class="nav-right">
+                            </div> -->
+                            <div class="col-lg-3 col-md-3 lg-visible">
+                                <ul class="nav-right2">
                                     <li class="heart-icon">
                                         <a href="#">
-                                            <i class="ti_user"></i>
+                                            <i class="ti-user"></i>
                                         </a>
                                         <!-- <div class="user-hover">
                                             <div class="select-total" t-ignore="true" t-if="website.user_id == user_id" style="border-top:none">
@@ -59,7 +59,7 @@
                                     </li>
                                     <li class="heart-icon">
                                         <a href="#">
-                                            <i class="ti_heart"></i>
+                                            <i class="ti-heart"></i>
                                             <span>1</span>
                                         </a>
                                         <!-- <div class="heart-hover">
@@ -105,7 +105,7 @@
                                     </li>
                                     <li class="cart-icon">
                                         <a href="#">
-                                            <i class="ti_bag"></i>
+                                            <i class="ti-shopping-cart"></i>
                                             <span>3</span>
                                         </a>
                                         <div class="cart-hover">
@@ -163,6 +163,67 @@
                                 </t>
                             </ul>
                         </nav>
+                        <div class="nav-menu2">
+                            <ul>
+                                <li class="heart-icon">
+                                    <a>
+                                        <i class="ti-heart"/>
+                                        <span>3</span>
+                                    </a>
+                                </li>
+                                <li class="cart-icon">
+                                    <a>
+                                        <i class="ti-shopping-cart"/>
+                                        <span>5</span>
+                                    </a>
+                                    <div class="cart-hover2">
+                                        <div class="select-items">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="si-pic"><img src="/theme_fashi/static/img/select-product-1.jpg" alt=""/></td>
+                                                        <td class="si-text">
+                                                            <div class="product-selected">
+                                                                <p>$60.00 x 1</p>
+                                                                <h6>Kabino Bedside Table</h6>
+                                                            </div>
+                                                        </td>
+                                                        <td class="si-close">
+                                                            <i class="ti-close"></i>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="si-pic"><img src="/theme_fashi/static/img/select-product-2.jpg" alt=""/></td>
+                                                        <td class="si-text">
+                                                            <div class="product-selected">
+                                                                <p>$60.00 x 1</p>
+                                                                <h6>Kabino Bedside Table</h6>
+                                                            </div>
+                                                        </td>
+                                                        <td class="si-close">
+                                                            <i class="ti-close"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="select-total">
+                                            <span>total:</span>
+                                            <h5>$120.00</h5>
+                                        </div>
+                                        <div class="select-button">
+                                            <a href="#" class="primary-btn view-card">VIEW CARD</a>
+                                            <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="heart-icon">
+                                    <a>
+                                        <i class="ti-user"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <div id="mobile-menu-wrap"></div>
                     </div>
                 </div>
