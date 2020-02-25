@@ -43,21 +43,28 @@
             <!-- nice select -->
             <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/plugins/nice-select/nice-select.scss"/>
 
-            <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/jquery-ui.min.scss"/>
+            <!-- <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/jquery-ui.min.scss"/> -->
             <!-- slicknav -->
             <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/plugins/slicknav/core.scss"/>
+
+            <link href="/theme_fashi/static/plugins/slick/slick.scss"   rel="stylesheet"/>
+            <link href="/theme_fashi/static/plugins/slick/slick-theme.scss"  rel="stylesheet"/>
 
             <link rel="stylesheet" type="text/scss" href="/theme_fashi/static/scss/style.scss"/>
         </xpath>
 
         <xpath expr="script[last()]" position="after">
-            <script type="text/javascript" src="/theme_fashi/static/js/jquery-ui.min.js"></script>
+            <!-- <script type="text/javascript" src="/theme_fashi/static/js/jquery-ui.min.js"></script> -->
             <script type="text/javascript" src="/theme_fashi/static/js/jquery.countdown.min.js"></script>
             <script type="text/javascript" src="/theme_fashi/static/plugins/nice-select/jquery.nice-select.js"></script>
             <script type="text/javascript" src="/theme_fashi/static/js/jquery.zoom.min.js"></script>
             <script type="text/javascript" src="/theme_fashi/static/js/jquery.dd.min.js"></script>
             <script type="text/javascript" src="/theme_fashi/static/plugins/slicknav/jquery.slicknav.js"></script>
             <script type="text/javascript" src="/theme_fashi/static/plugins/owl-carousel/owl.carousel.min.js"></script>
+            <script type="text/javascript" src="/theme_fashi/static/js/s_latest_posts_frontend.js"></script>
+            <script type="text/javascript" src="/theme_fashi/static/plugins/slick/slick.js"></script>
+            <script type="text/javascript" src="/theme_fashi/static/js/data_slider.js"></script>
+
             <script type="text/javascript" src="/theme_fashi/static/js/main.js"></script>
         </xpath>
     </template>

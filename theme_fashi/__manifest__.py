@@ -8,6 +8,7 @@
       'views/assets.xml',
       'views/header.xml',
       'views/footer.xml',
+      'views/snippets.xml',
       # 'views/pages.xml',
       
   ],

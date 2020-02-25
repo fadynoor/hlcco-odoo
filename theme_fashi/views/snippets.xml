@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="data_slider_snippet" name="Product Slider">
+        <section class="oe_snippet_body o_data_slider section-md women-banner spad" data-options="false" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-4 text-center">
+                        <div class="filter-control">
+                            <ul>
+                                <li class="active">Clothings</li>
+                            </ul>
+                        </div>
+                        <div class="add-product">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template> 
+
+    <template id="static_product_list_snippet" name="Static Product List">
+        <section class="oe_snippet_body latest-blog spad">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="section-title">
+                            <h2>Our Products</h2>
+                        </div>
+                        <div class="product-list">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="product-item">
+                                        <div class="pi-pic">
+                                            <img src="/theme_fashi/static/img/products/product-1.jpg" alt=""/>
+                                            <div class="sale pp-sale">Sale</div>
+                                            <!-- <div class="icon">
+                                                <i class="icon_heart_alt"></i>
+                                            </div> -->
+                                            <ul>
+                                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"/></a></li>
+                                                <li class="quick-view"><a href="/shop/product/{url}">+ Quick View</a></li>
+                                                <li class="w-icon"><a href="#"><i class="icon_heart_alt"/></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="pi-text">
+                                            <!-- <div class="catagory-name">Towel</div> -->
+                                            <a href="#">
+                                                <h5>Pure Pineapple</h5>
+                                            </a>
+                                            <div class="product-price">
+                                                $14.00
+                                                <!-- <span>$35.00</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="product-item">
+                                        <div class="pi-pic">
+                                            <img src="/theme_fashi/static/img/products/product-2.jpg" alt=""/>
+                                            <!-- <div class="icon">
+                                                <i class="icon_heart_alt"></i>
+                                            </div> -->
+                                            <ul>
+                                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                                                <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                                <li class="w-icon"><a href="#"><i class="icon_heart_alt"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="pi-text">
+                                            <!-- <div class="catagory-name">Coat</div> -->
+                                            <a href="#">
+                                                <h5>Guangzhou sweater</h5>
+                                            </a>
+                                            <div class="product-price">
+                                                $13.00
+                                                <!-- <span>$35.00</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="product-item">
+                                        <div class="pi-pic">
+                                            <img src="/theme_fashi/static/img/products/product-3.jpg" alt=""/>
+                                            <!-- <div class="icon">
+                                                <i class="icon_heart_alt"></i>
+                                            </div> -->
+                                            <ul>
+                                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                                                <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                                <li class="w-icon"><a href="#"><i class="icon_heart_alt"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="pi-text">
+                                            <!-- <div class="catagory-name">Shoes</div> -->
+                                            <a href="#">
+                                                <h5>Guangzhou sweater</h5>
+                                            </a>
+                                            <div class="product-price">
+                                                $34.00
+                                                <!-- <span>$35.00</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="product-item">
+                                        <div class="pi-pic">
+                                            <img src="/theme_fashi/static/img/products/product-4.jpg" alt=""/>
+                                            <!-- <div class="icon">
+                                                <i class="icon_heart_alt"></i>
+                                            </div> -->
+                                            <ul>
+                                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                                                <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                                <li class="w-icon"><a href="#"><i class="icon_heart_alt"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="pi-text">
+                                            <!-- <div class="catagory-name">Coat</div> -->
+                                            <a href="#">
+                                                <h5>Microfiber Wool Scarf</h5>
+                                            </a>
+                                            <div class="product-price">
+                                                $64.00
+                                                <!-- <span>$35.00</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <template id="instagram_snippet" name="Instagram Photos">
+        <div class="oe_snippet_body instagram-photo">
+            <div class="insta-item set-bg" data-setbg="/theme_fashi/static/img/snippets/instagram/insta-1.jpg">
+                <div class="inside-text">
+                    <i class="ti-instagram"/>
+                    <h5><a href="#">colorlib_Collection</a></h5>
+                </div>
+            </div>
+            <div class="insta-item set-bg" data-setbg="/theme_fashi/static/img/snippets/instagram/insta-2.jpg">
+                <div class="inside-text">
+                    <i class="ti-instagram"/>
+                    <h5><a href="#">colorlib_Collection</a></h5>
+                </div>
+            </div>
+            <div class="insta-item set-bg" data-setbg="/theme_fashi/static/img/snippets/instagram/insta-3.jpg">
+                <div class="inside-text">
+                    <i class="ti-instagram"/>
+                    <h5><a href="#">colorlib_Collection</a></h5>
+                </div>
+            </div>
+            <div class="insta-item set-bg" data-setbg="/theme_fashi/static/img/snippets/instagram/insta-4.jpg">
+                <div class="inside-text">
+                    <i class="ti-instagram"/>
+                    <h5><a href="#">colorlib_Collection</a></h5>
+                </div>
+            </div>
+            <div class="insta-item set-bg" data-setbg="/theme_fashi/static/img/snippets/instagram/insta-5.jpg">
+                <div class="inside-text">
+                    <i class="ti-instagram"/>
+                    <h5><a href="#">colorlib_Collection</a></h5>
+                </div>
+            </div>
+            <div class="insta-item set-bg" data-setbg="/theme_fashi/static/img/snippets/instagram/insta-6.jpg">
+                <div class="inside-text">
+                    <i class="ti-instagram"/>
+                    <h5><a href="#">colorlib_Collection</a></h5>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="testimonial_snippet" name="Testimonials" >
+        <div id="team-carousel-5" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item">
+                    <div class="posted-by">
+                        <div class="pb-pic">
+                            <img src="/theme_fashi/static/img/snippets/blog/post-by.png" alt=""/>
+                        </div>
+                        <div class="pb-text">
+                            <a href="#">
+                            <h5>Shane Lynch</h5>
+                            </a>
+                            <p>Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            amodo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="posted-by">
+                        <div class="pb-pic">
+                            <img src="/theme_fashi/static/img/snippets/blog/post-by.png" alt=""/>
+                        </div>
+                        <div class="pb-text">
+                            <a href="#">
+                            <h5>Shane Lynch</h5>
+                            </a>
+                            <p>Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            amodo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#team-carousel-5" data-slide="prev">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            </a>
+            <a class="right carousel-control" href="#team-carousel-5" data-slide="next">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+    </template>
+
+    <template id="benefit_snippet" name="Benefits" >
+        <div class="oe_snippet_body benefit-items">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-benefit">
+                        <div class="sb-icon">
+                            <img src="/theme_fashi/static/img/benefit/icon-1.png" alt=""/>
+                        </div>
+                        <div class="sb-text">
+                            <h6>Free Shipping</h6>
+                            <p>For all order over 99$</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-benefit">
+                        <div class="sb-icon">
+                            <img src="/theme_fashi/static/img/benefit/icon-2.png" alt=""/>
+                        </div>
+                        <div class="sb-text">
+                            <h6>Delivery On Time</h6>
+                            <p>If good have prolems</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-benefit">
+                        <div class="sb-icon">
+                            <img src="/theme_fashi/static/img/benefit/icon-1.png" alt=""/>
+                        </div>
+                        <div class="sb-text">
+                            <h6>Secure Payment</h6>
+                            <p>100% secure payment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="latest_posts_snippet" name="Posts List">
+        <section class="s_latest_posts latest-blog spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <h2>From The Blog</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="js_get_impacto_posts" data-loading="true" data-template="theme_fashi.media_list_template"/>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Latest posts's Template -->
+    <template id="media_list_template">
+        <t t-if="not posts">
+            <t t-call="theme_fashi.no_blog_posts"/>
+        </t>
+        <t t-if="posts">
+            <t t-foreach="posts" t-as="p">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-blog">
+                        <t t-call="website.record_cover"/>
+                        <div class="latest-text">
+                            <!-- <div class="tag-list">
+                                <div class="tag-item">
+                                    <i class="fa fa-calendar-o"></i>
+                                    May 4,2019
+                                </div>
+                                <div class="tag-item">
+                                    <i class="fa fa-comment-o"></i>
+                                    5
+                                </div>
+                            </div> -->
+                            <a t-att-href="'/blog/%s/post/%s' % (p.blog_id.id, p.id)">
+                                <h4 t-field="p.name"/>
+                            </a>
+                            <p t-field="p.subtitle"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <!-- No post here, template -->
+    <template id="no_blog_posts">
+        <div class="container readable">
+            <div class="alert alert-warning alert-dismissible text-center" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&#215;</span>
+                </button>
+                <h3>No posts here...</h3>
+                <p>Please, be sure that your posts are not in draft state</p>
+            </div>
+        </div>
+    </template>
+
+    <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
+        <xpath expr="//div[@id='snippet_feature']//t[@t-snippet][last()]" position="after">
+            <t t-snippet="theme_fashi.data_slider_snippet"
+                t-thumbnail="/theme_fashi/static/img/snippets/04.jpg"/>
+            <t t-snippet="theme_fashi.static_product_list_snippet"
+                t-thumbnail="/theme_fashi/static/img/snippets/05.jpg"/>
+            <t t-snippet="theme_fashi.instagram_snippet"
+                t-thumbnail="/theme_fashi/static/img/snippets/03.jpg"/>
+            <t t-snippet="theme_fashi.testimonial_snippet"
+                t-thumbnail="/theme_fashi/static/img/snippets/s_quotes_slider_2.gif"/>
+            <t t-snippet="theme_fashi.benefit_snippet"
+                t-thumbnail="/theme_fashi/static/img/snippets/s_three_columns.png"/>
+            <t t-snippet="theme_fashi.latest_posts_snippet"
+                t-thumbnail="/theme_fashi/static/img/snippets/02.jpg"/>
+        </xpath>
+    </template>
+</odoo>
