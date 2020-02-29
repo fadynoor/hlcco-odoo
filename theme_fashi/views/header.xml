@@ -35,32 +35,8 @@
                                 <ul class="nav-right2">
                                     <li class="heart-icon">
                                         <a href="#">
-                                            <i class="ti-user"></i>
-                                        </a>
-                                        <!-- <div class="user-hover">
-                                            <div class="select-total" t-ignore="true" t-if="website.user_id == user_id" style="border-top:none">
-                                                <a href="#">Login/Sign up</a>
-                                            </div>
-                                            <t t-ignore="true" t-if="website.user_id != user_id">
-                                            <div class="select-total" style="border-top:none">
-                                                Hello, <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
-                                            </div>
-                                            <div class="select-total">
-                                                <a href="#">My Wishlist</a>
-                                            </div>
-                                            <div class="select-total" style="border-top:none">
-                                                <a href="#">My Cart</a>
-                                            </div>
-                                            <div class="select-total" id="o_logout">
-                                                <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
-                                            </div>
-                                            </t>
-                                        </div> -->
-                                    </li>
-                                    <li class="heart-icon">
-                                        <a href="#">
                                             <i class="ti-heart"></i>
-                                            <span>1</span>
+                                            <!-- <span>1</span> -->
                                         </a>
                                         <!-- <div class="heart-hover">
                                             <div class="select-items">
@@ -106,9 +82,9 @@
                                     <li class="cart-icon">
                                         <a href="#">
                                             <i class="ti-shopping-cart"></i>
-                                            <span>3</span>
+                                            <!-- <span>3</span> -->
                                         </a>
-                                        <div class="cart-hover">
+                                        <!-- <div class="cart-hover">
                                             <div class="select-items">
                                                 <table>
                                                     <tbody>
@@ -147,7 +123,31 @@
                                                 <a href="#" class="primary-btn view-card">VIEW CARD</a>
                                                 <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
                                             </div>
-                                        </div>
+                                        </div> -->
+                                    </li>
+                                    <li class="user-icon">
+                                        <a href="#">
+                                            <i class="ti-user"></i>
+                                        </a>
+                                        <!-- <div class="user-hover">
+                                            <div class="select-total" t-ignore="true" t-if="website.user_id == user_id" style="border-top:none">
+                                                <a href="#">Login/Sign up</a>
+                                            </div>
+                                            <t t-ignore="true" t-if="website.user_id != user_id">
+                                            <div class="select-total" style="border-top:none">
+                                                Hello, <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
+                                            </div>
+                                            <div class="select-total">
+                                                <a href="#">My Wishlist</a>
+                                            </div>
+                                            <div class="select-total" style="border-top:none">
+                                                <a href="#">My Cart</a>
+                                            </div>
+                                            <div class="select-total" id="o_logout">
+                                                <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                                            </div>
+                                            </t>
+                                        </div> -->
                                     </li>
                                 </ul>
                             </div>
@@ -168,15 +168,15 @@
                                 <li class="heart-icon">
                                     <a>
                                         <i class="ti-heart"/>
-                                        <span>3</span>
+                                        <!-- <span>3</span> -->
                                     </a>
                                 </li>
                                 <li class="cart-icon">
                                     <a>
                                         <i class="ti-shopping-cart"/>
-                                        <span>5</span>
+                                        <!-- <span>5</span> -->
                                     </a>
-                                    <div class="cart-hover2">
+                                    <!-- <div class="cart-hover">
                                         <div class="select-items">
                                             <table>
                                                 <tbody>
@@ -215,9 +215,9 @@
                                             <a href="#" class="primary-btn view-card">VIEW CARD</a>
                                             <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </li>
-                                <li class="heart-icon">
+                                <li class="user-icon">
                                     <a>
                                         <i class="ti-user"/>
                                     </a>
